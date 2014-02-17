@@ -10,8 +10,8 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>baonjs</artifactId>
-    <version>0.7.2</version>
+    <artifactId>baconjs</artifactId>
+    <version>0.7.2-SNAPSHOT</version>
     <name>bacon.js</name>
     <description>WebJar for bacon.js</description>
     <url>http://webjars.org</url>
@@ -47,7 +47,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>0.7.2</upstream.version>
         <upstream.url>https://github.com/baconjs/bacon.js/archive</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
+        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
 
     <build>
@@ -83,7 +83,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/baconjs-${upstreamVersion}/dist" includes="dist/" />
+                                    <fileset dir="${project.build.directory}/bacon.js-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
