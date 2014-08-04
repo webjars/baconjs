@@ -40,7 +40,7 @@
     </developers>
 
     <dependencies>
-        
+
     </dependencies>
 
     <properties>
@@ -48,6 +48,13 @@
         <upstream.version>0.7.2</upstream.version>
         <upstream.url>https://github.com/baconjs/bacon.js/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "Bacon": "Bacon"
+                }
+            }
+        </requirejs>
     </properties>
 
     <build>
@@ -69,7 +76,7 @@
                     </execution>
                 </executions>
             </plugin>
-            
+
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.7</version>
