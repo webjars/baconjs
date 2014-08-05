@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>baconjs</artifactId>
-    <version>0.7.18-SNAPSHOT</version>
+    <version>0.7.18</version>
     <name>bacon.js</name>
     <description>WebJar for bacon.js</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>https://github.com/webjars/baconjs</url>
         <connection>scm:git:https://github.com/webjars/baconjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/baconjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>baconjs-0.7.18</tag>
     </scm>
 
     <developers>
